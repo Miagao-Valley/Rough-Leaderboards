@@ -21,7 +21,7 @@ public class RoughLeaderboards implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger LOGGER = LoggerFactory.getLogger("roughleaderboards");
-
+	public static final String MOD_ID = "roughleaderboards";
 	public static final Identifier DIRT_BROKEN = new Identifier("roughleaderboards", "dirt_broken");
 	private Integer totalDirtBlocksBroken = 0;
 
