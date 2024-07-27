@@ -1,5 +1,6 @@
 package net.miavalley.roughleaderboards;
 
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.registry.RegistryWrapper;
@@ -7,9 +8,14 @@ import net.minecraft.world.PersistentState;
 import net.minecraft.world.PersistentStateManager;
 import net.minecraft.world.World;
 
+import java.lang.reflect.Type;
+import java.util.HashMap;
+import java.util.Objects;
+import java.util.UUID;
+
 public class StateSaverAndLoader extends PersistentState {
     public Integer totalDirtBlocksBroken = 0;
-
+    public HashMap<UUID, PlayerData> players = new HashMap<>();
     @Override
     public NbtCompound writeNbt(NbtCompound nbt) {
         nbt.putInt("totalDirtBlocksBroken", totalDirtBlocksBroken);
@@ -22,7 +28,7 @@ public class StateSaverAndLoader extends PersistentState {
         return state;
     }
 
-    public static Type<StateSaverAndLoader> type = new Type<>(
+    public static Class<StateSaverAndLoader> type = new Class<>(
             StateSaverAndLoader::new,
             StateSaverAndLoader::createFromNbt,
             null
@@ -33,5 +39,10 @@ public class StateSaverAndLoader extends PersistentState {
         StateSaverAndLoader state = persistentStateManager.getOrCreate(type, RoughLeaderboards.MOD_ID);
         state.markDirty();
         return state;
+    }
+    public static PlayerData getPlayerState(LivingEntity player) {
+        StateSaverAndLoader serverState = getServerState(Objects.requireNonNull(player.getWorld().getServer()));
+        PlayerData playerState = serverState.players.computeIfAbsent(player.getUuid(), uuid -> new PlayerData());
+        return playerState;
     }
 }

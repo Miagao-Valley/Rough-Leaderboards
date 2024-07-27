@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50ef9cde-3ab6-4958-9574-a9fd8e6b5b93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/miavalley/roughleaderboards/RoughLeaderboardsClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/miavalley/roughleaderboards/StateSaverAndLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Rough-Leaderboards.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/miavalley/roughleaderboards/PlayerData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/miavalley/roughleaderboards/RoughLeaderboards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/miavalley/roughleaderboards/RoughLeaderboards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/miavalley/roughleaderboards/StateSaverAndLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/miavalley/roughleaderboards/StateSaverAndLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
@@ -99,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721924372117</updated>
-      <workItem from="1721924372465" duration="11890000" />
+      <workItem from="1721924372465" duration="15110000" />
     </task>
     <servers />
   </component>
