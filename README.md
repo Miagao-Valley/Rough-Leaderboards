@@ -31,12 +31,13 @@ Gives rewards or buffs to those at the top of the leaderboards or those who reac
 
 ## 💪🏼 Contributing
 
-1. Learn Fabric API. [Here](https://youtube.com/playlist?list=PLKGarocXCE1EO43Dlf5JGh7Yk-kRAXUEJ&si=vxw4DQopEaEXGLrW) is a playlist that may help you get started.
-2. When ready create and checkout to a branch and experiment with some changes. 
+1. Learn Java Programming.[Resource](https://www.w3schools.com/java/)
+2. Learn Fabric API. [Here](https://youtube.com/playlist?list=PLKGarocXCE1EO43Dlf5JGh7Yk-kRAXUEJ&si=vxw4DQopEaEXGLrW) is a playlist that may help you get started.
+3. When ready create and checkout to a branch and experiment with some changes. 
     ```
     git checkout -b "NameOfBranch"
     ```
-3. Join the discord and collaborate with the team.
+4. Join the discord and collaborate with the team.
 
 ## 🤲 Getting involved
 This project belongs to the open-source community named Miagao Valley 🇵🇭. We have interesting projects you might want to check out 👀. Visit our community [here](https://discord.gg/kzAKWghs)!
